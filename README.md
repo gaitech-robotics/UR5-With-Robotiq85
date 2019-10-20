@@ -1,4 +1,18 @@
 # UR5-With-Robotiq85 #
+##Installation##
+
+Note: Following steps are based on UBUNTU 16.04 with ROS-kinetic
+
+This step assumes that your PC is running with Ubuntu 16 and configured with ROS KINETIC and all required libraries 
+
+Creating Work Space and cloning UR5-With-Robotiq85 and universal_robot package
+
+     mkdir –p ~/catkin_ws/src
+     cd ~/catkin_ws/src
+     git clone https://github.com/gaitech-robotics/UR5-With-Robotiq85.git
+     git clone https://github.com/gaitech-robotics/universal_robot.git
+     cd ~/catkin_ws && catkin_make
+
 ## Basic Usage ##
 ### Launch the decsciption ###
     roslaunch ur5_robotiq85_description ur5_robotiq85_upload.launch
