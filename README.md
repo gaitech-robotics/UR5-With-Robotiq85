@@ -22,14 +22,15 @@ Creating Work Space and cloning UR5-With-Robotiq85 and universal_robot package
     roslaunch ur_morden_driver ur5_bringup.launch
 ### Bringup the move group ###
     roslaunch ur5_robotiq85_moveit_config move_group.launch   
-  
+
+### Actions List ###
 
 | Group   | Action Nmae                     | Action Type           |
 | :-------| :------------------------------ | :-------------------- |
 | Arm     | follow_joint_trajectory         | FollowJointTrajectory | 
 | Gripper | gripper_actions/gripper_command | GripperCommand        |
 
-#### Modification Process: ####
+## Modification Process: ##
 
 - <font size=4> Turn off the loading of the model description in ur5_bringup launch file. </font>
 - <font size=4> Turn off the startup of the ur5 arm robot\_sate\_publish node. </font>
