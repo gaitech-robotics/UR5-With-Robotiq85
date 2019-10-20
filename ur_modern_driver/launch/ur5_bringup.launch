@@ -27,8 +27,4 @@
     <arg name="max_payload"  value="$(arg max_payload)"/>
   </include>
 
-<!-- gripper launch -->
-
-  <include file="$(find robotiq_85_bringup)/launch/robotiq_85.launch"/>
-
 </launch>
