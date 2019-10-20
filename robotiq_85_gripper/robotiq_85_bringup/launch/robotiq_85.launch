@@ -11,5 +11,8 @@
         <param name="comport" value="$(arg comport)" />
         <param name="baud" value="$(arg baud)" />
     </node>
+    
+    <!-- Robotiq 85 Actions -->
+    <node pkg="robotiq_85_gripper_actions" type="gripper_actions" name="robotiq_85_gripper_actions" respawn="true" output="screen" />
 
  </launch>
