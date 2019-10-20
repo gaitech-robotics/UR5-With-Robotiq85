@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+
+  <arg name="transmission_hw_interface" default="hardware_interface/PositionJointInterface" />
+  <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find ur5_robotiq85_description)/urdf/ur5_robotiq85_robot.urdf.xacro' transmission_hw_interface:=$(arg transmission_hw_interface)" />
+
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+        <rosparam param="source_list">[/gripper/joint_states,/ur_arm/joint_states]</rosparam>
+    </node>
+        
+
+ 
+</launch>

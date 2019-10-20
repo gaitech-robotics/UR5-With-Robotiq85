@@ -1,0 +1,9 @@
+controller_list:
+  - name: "gripper_actions"
+    action_ns: gripper_command
+    type: GripperCommand
+    default: true
+    
+    command_joint: gripper_finger1_knuckle_joint
+    joints:
+      - gripper_finger1_knuckle_joint
