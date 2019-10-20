@@ -41,5 +41,6 @@ Creating Work Space and cloning UR5-With-Robotiq85 and universal_robot package
 - <font size=4> Add robot\_sate\_publish node, joint\_sate\_publish node and load the new robot description file in the ur5\_robotiq85\_upload launch file . </font>
 - <font size=4> Add /gripper/joint\_states and /ur\_arm/joint\_states into the joint\_sate\_publish node source list. </font>
 - <font size=4> Base on the new description file make a new moveit congfig package. </font>
+- <font size=4> Add the transformation in the GripperCommand Action.`RealPosition = (-0.10897)*GoalPosition+0.085`</font>
 
 
