@@ -30,7 +30,8 @@ Creating Work Space and cloning UR5-With-Robotiq85 and universal_robot package
 - <font size=4> Remap the ur5 arm joint states publish topic from /joint\_states to /ur\_arm/joint\_states. </font>
 - <font size=4> Turn off the startup of the robotiq85 robot\_sate\_publish node and joint\_sate\_publish node. </font>
 - <font size=4> Turn off the loading of the model description in robotiq\_85\_bringup launch file. </font>
-- <font size=4> In ur5\_robotiq85\_upload launch file add robot\_sate\_publish node, joint\_sate\_publish node and load the new robot description file. </font>
+- <font size=4> Add robotiq85 gripper actions node in the robotiq\_85.launch  </font>
+- <font size=4> Add robot\_sate\_publish node, joint\_sate\_publish node and load the new robot description file in the ur5\_robotiq85\_upload launch file . </font>
 - <font size=4> Add /gripper/joint\_states and /ur\_arm/joint\_states into the joint\_sate\_publish node source list. </font>
 - <font size=4> Base on the new description file make a new moveit congfig package. </font>
 
