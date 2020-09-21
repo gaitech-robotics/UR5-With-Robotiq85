@@ -18,7 +18,7 @@ Creating Work Space and cloning UR5-With-Robotiq85 and universal_robot package
     roslaunch ur5_robotiq85_description ur5_robotiq85_upload.launch
 ### Bringup the robotiq85 ###
     roslaunch robotiq_85_bringup robotiq_85.launch
-### Bringup the UR5 Arm ###
+### Bringup the UR5 Arm （Before launch this file, you need set the UR5 IP address and modify in the launch file.) ###
     roslaunch ur_morden_driver ur5_bringup.launch
 ### Bringup the move group ###
     roslaunch ur5_robotiq85_moveit_config move_group.launch   
